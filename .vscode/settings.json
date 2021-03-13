@@ -1,0 +1,6 @@
+{
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": true,
+    "python.formatting.provider": "yapf",
+    "python.linting.enabled": true
+}
