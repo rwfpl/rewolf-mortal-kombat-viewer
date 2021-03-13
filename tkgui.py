@@ -45,13 +45,6 @@ class Application(tk.Frame):
         self.createWidgets()
         self.master.protocol('WM_DELETE_WINDOW', lambda: self.onClose())
 
-        # testing
-        self.string_mk_exe.set('E:\\games\\Mortal Kombat\\mk1\\MK1.EXE')
-        self.parseMkExecutable(self.string_mk_exe.get())
-        self.string_gra_file.set(
-            'E:\\games\\Mortal Kombat\\mk1\\GRAPHICS\\RAIDEN.GRA')
-        self.parseGraFile(self.string_gra_file.get())
-
     def onClose(self) -> None:
         if self.animation_thread_running:
             self.close_when_thread_is_finished = True
